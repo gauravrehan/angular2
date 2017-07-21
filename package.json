@@ -1,8 +1,8 @@
 {
-    "name": "product-management",
+    "name": "angular2",
     "version": "1.0.0",
-    "author": "Deborah Kurata",
-    "description": "Package for the Acme Product Management sample application",
+    "author": "Gaurav Rehan",
+    "description": "Package for the Angular 2 sample application",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "tsc": "tsc",
