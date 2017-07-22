@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
     selector: 'pm-app',
     template: `
         <h1>{{pageTitle}}</h1>
+        <pm-products></pm-products>
     `
 })
 export class AppComponent {
-    pageTitle: string = 'Gaurav Rehan - Angular 2 Project'
+    pageTitle: string = 'Ecom International'
  }
