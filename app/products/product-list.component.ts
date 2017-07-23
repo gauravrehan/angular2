@@ -19,11 +19,14 @@ export class ProductListComponent implements OnInit {
     showImage: boolean = false;
     listFilter: string = 'cart';
     message: string;
+    errorMessage: string;
 
 //Lifecycle hook method
     ngOnInit() : void {
         console.log('In OnInit');
-        this.products = this.productService.getProducts();
+        this.productService.getProducts().subscribe(
+            products => this.products = products,
+            error => this.errorMessage = <any>error);
     }
 
     private productService : ProductService;
